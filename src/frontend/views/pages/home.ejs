@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs', { pageTitle: pageTitle, isAuthenticated: isAuthenticated, user: user }) %>
+
+<main class="home-main">
+    <section class="hero-section">
+        <h1>Discover Your Next Great Read</h1>
+        <p>Explore thousands of books from different genres. Fast, easy, and secure checkout.</p>
+        <a href="/books" class="btn btn-cta">Shop Now</a>
+        
+
+[Image of books on a shelf]
+
+    </section>
+
+    <section class="featured-books">
+        <h2>Featured Titles</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="/images/book-cover-placeholder.jpg" alt="Book Cover" class="book-image">
+                <h3>The Code Book</h3>
+                <p>By Simon Singh</p>
+                <p class="price">Ksh 1,500</p>
+                <a href="/books/123" class="btn btn-secondary">View Details</a>
+            </div>
+            </div>
+    </section>
+</main>
+
+<%- include('../partials/footer.ejs') %>

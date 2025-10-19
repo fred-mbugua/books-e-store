@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="container">
+            <a href="/" class="logo">Book<span class="logo-gold">Store</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/books">Books</a></li>
+                <li><a href="/cart">Cart</a></li>
+                <% if (isAuthenticated) { %>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/logout" class="btn btn-logout">Logout</a></li>
+                <% } else { %>
+                    <li><a href="/login" class="btn btn-primary">Login</a></li>
+                    <li><a href="/register" class="btn btn-secondary">Register</a></li>
+                <% } %>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="container">

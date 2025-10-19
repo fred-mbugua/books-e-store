@@ -1,0 +1,205 @@
+/* Custom Deep Teal & Gold Theme */
+:root {
+    --primary-color: #008080; /* Deep Teal - for main elements */
+    --secondary-color: #FFD700; /* Gold - for accents/buttons */
+    --text-color: #2c3e50; /* Darker text */
+    --light-text-color: #f0f0f0;
+    --background-color: #ecf0f1; /* Light grey background */
+    --card-background: #ffffff;
+    --header-height: 70px;
+    --spacing-unit: 15px;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+/* Header */
+.main-header {
+    background-color: var(--primary-color);
+    padding: 0;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.logo-gold {
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.nav-links a:hover:not(.btn) {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.btn-primary:hover {
+    background-color: #e6c500;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-cta {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.1em;
+    padding: 12px 25px;
+}
+
+/* Main Content and Footer */
+.content {
+    /* Ensuring footer stays at the bottom */
+    min-height: calc(100vh - var(--header-height) - 60px); 
+    padding: 30px 0;
+}
+
+.main-footer {
+    background-color: var(--text-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Home Page Sections */
+.hero-section {
+    background: linear-gradient(rgba(0, 128, 128, 0.8), rgba(0, 128, 128, 0.8)), url('/images/hero-bg.jpg') center/cover;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.featured-books h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    width: auto;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.book-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.book-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.book-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
