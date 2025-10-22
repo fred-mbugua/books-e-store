@@ -1,0 +1,45 @@
+<%- include('../../partials/header.ejs', { pageTitle: 'My Order History' }) %>
+
+<main class="container py-5">
+    <h1 class="page-header">My Order History</h1>
+    <a href="/profile" class="btn btn-secondary mb-4">← Back to Dashboard</a>
+
+    <% if (orders && orders.length > 0) { %>
+        <div class="table-responsive card p-3">
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% orders.forEach(order => { %>
+                        <tr>
+                            <td>#<%= order.order_id.substring(0, 8) %></td>
+                            <td><%= new Date(order.created_at).toLocaleDateString() %></td>
+                            <td>Ksh <%= order.total_amount.toFixed(2) %></td>
+                            <td>
+                                <span class="badge status-<%= order.status_name.toLowerCase() %>">
+                                    <%= order.status_name.toUpperCase() %>
+                                </span>
+                            </td>
+                            <td>
+                                <a href="/profile/orders/<%= order.order_id %>" class="btn btn-sm btn-info">View</a>
+                            </td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    <% } else { %>
+        <div class="alert alert-info text-center" role="alert">
+            You have not placed any orders yet. <a href="/books" class="alert-link">Start shopping!</a>
+        </div>
+    <% } %>
+</main>
+
+<%- include('../../partials/footer.ejs') %>

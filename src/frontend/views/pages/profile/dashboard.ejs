@@ -1,0 +1,38 @@
+<%- include('../../partials/header.ejs', { pageTitle: 'My Account Dashboard' }) %>
+
+<main class="container py-5">
+    <h1 class="page-header">Hello, <%= user.firstName %>!</h1>
+    <p class="lead text-muted">Welcome to your personal account dashboard. Manage your orders and personal details here.</p>
+    
+    <div class="row">
+        
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 h-100 border-primary border-3 border-bottom">
+                <h3 class="h5 text-primary">Account Details</h3>
+                <p><strong>Name:</strong> <%= user.firstName %> <%= user.lastName %></p>
+                <p><strong>Email:</strong> <%= user.email %></p>
+                <p><strong>Role:</strong> <%= user.roleName %></p>
+                <a href="/profile/edit" class="btn btn-sm btn-outline-primary mt-3">Edit Details</a>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 h-100 border-info border-3 border-bottom">
+                <h3 class="h5 text-info">Your Orders</h3>
+                <p class="card-text">View the status and history of all your recent purchases.</p>
+                <a href="/profile/orders" class="btn btn-sm btn-outline-info mt-3">View Orders</a>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 h-100 border-warning border-3 border-bottom">
+                <h3 class="h5 text-warning">Security</h3>
+                <p class="card-text">Manage your account password and security settings.</p>
+                <a href="/profile/security" class="btn btn-sm btn-outline-warning mt-3">Change Password</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%- include('../../partials/footer.ejs') %>

@@ -1,0 +1,73 @@
+<%- include('../../../partials/header.ejs', { pageTitle: pageTitle }) %>
+
+<main class="container admin-content">
+    <h1 class="page-header">Order #<%= order.order_id.substring(0, 8) %> Details</h1>
+    <a href="/admin/orders" class="btn btn-secondary">← Back to Order List</a>
+
+    <% if (message === 'status_updated') { %>
+        <div class="alert alert-success">Order status updated successfully!</div>
+    <% } else if (message) { %>
+        <div class="alert alert-danger">Error updating status.</div>
+    <% } %>
+
+    <div class="order-details-grid">
+        <div class="card">
+            <h2>Customer & Shipping Info</h2>
+            <p><strong>Customer Name:</strong> <%= order.guest_name %></p>
+            <p><strong>Email:</strong> <%= order.guest_email %></p>
+            <p><strong>Phone:</strong> <%= order.guest_phone %></p>
+            <p><strong>Shipping Address:</strong> <%= order.shipping_address %></p>
+            <p><strong>User:</strong> <%= order.user_id ? 'Registered' : 'Guest' %></p>
+        </div>
+
+        <div class="card">
+            <h2>Order Summary</h2>
+            <p><strong>Date Placed:</strong> <%= new Date(order.created_at).toLocaleString() %></p>
+            <p><strong>Total Amount:</strong> Ksh <%= order.total_amount.toFixed(2) %></p>
+            <p><strong>Current Status:</strong> <span class="status-<%= order.status_name.toLowerCase() %>"><%= order.status_name.toUpperCase() %></span></p>
+
+            <h3>Update Status</h3>
+            <form method="POST" action="/admin/orders/<%= order.order_id %>/update-status">
+                <div class="form-group">
+                    <label for="status_id">New Status:</label>
+                    <select id="status_id" name="status_id" class="form-control">
+                        <% allStatuses.forEach(status => { %>
+                            <option value="<%= status.status_id %>" <%= status.status_id === order.status_id ? 'selected' : '' %>>
+                                <%= status.status_name.toUpperCase() %>
+                            </option>
+                        <% }); %>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Status</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <h2>Items in Order</h2>
+        <table class="table order-items-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Quantity</th>
+                    <th>Price at Purchase</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% order.items.forEach(item => { %>
+                    <tr>
+                        <td><%= item.title %></td>
+                        <td><%= item.author %></td>
+                        <td><%= item.quantity %></td>
+                        <td>Ksh <%= item.price_at_purchase.toFixed(2) %></td>
+                        <td>Ksh <%= (item.quantity * item.price_at_purchase).toFixed(2) %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<%- include('../../../partials/footer.ejs') %>

@@ -1,0 +1,33 @@
+<%- include('../../../partials/header.ejs', { pageTitle: pageTitle }) %>
+
+<main class="container admin-content">
+    <h1 class="page-header">Manage Customer Orders</h1>
+    <a href="/admin/dashboard" class="btn btn-secondary">← Back to Dashboard</a>
+
+    <table class="table order-list-table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Date Placed</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% orders.forEach(order => { %>
+                <tr>
+                    <td><%= order.order_id.substring(0, 8) %></td>
+                    <td><%= order.guest_name %> (<%= order.user_email || 'Guest' %>)</td>
+                    <td>Ksh <%= order.total_amount.toFixed(2) %></td>
+                    <td><span class="status-<%= order.status_name.toLowerCase() %>"><%= order.status_name.toUpperCase() %></span></td>
+                    <td><%= new Date(order.created_at).toLocaleDateString() %></td>
+                    <td><a href="/admin/orders/<%= order.order_id %>" class="btn btn-sm btn-info">View Details</a></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>
+
+<%- include('../../../partials/footer.ejs') %>

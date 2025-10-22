@@ -1,28 +1,38 @@
-<%- include('../partials/header.ejs', { pageTitle: pageTitle, isAuthenticated: isAuthenticated, user: user }) %>
+<%- include('../partials/header.ejs', { pageTitle: pageTitle }) %>
 
-<main class="home-main">
-    <section class="hero-section">
-        <h1>Discover Your Next Great Read</h1>
-        <p>Explore thousands of books from different genres. Fast, easy, and secure checkout.</p>
-        <a href="/books" class="btn btn-cta">Shop Now</a>
-        
+<div class="container">
+    <header class="hero-section text-center mb-5">
+        <h1 class="display-3 fw-bold">Discover Your Next Read</h1>
+        <p class="lead mb-4">Quality books at unbeatable prices, delivered right to your door.</p>
+        <a href="/books" class="btn btn-primary btn-lg">Explore Catalog</a>
+    </header>
 
-[Image of books on a shelf]
-
-    </section>
-
-    <section class="featured-books">
-        <h2>Featured Titles</h2>
-        <div class="book-list">
-            <div class="book-card">
-                <img src="/images/book-cover-placeholder.jpg" alt="Book Cover" class="book-image">
-                <h3>The Code Book</h3>
-                <p>By Simon Singh</p>
-                <p class="price">Ksh 1,500</p>
-                <a href="/books/123" class="btn btn-secondary">View Details</a>
+    <h2 class="text-center mb-4">Featured Categories</h2>
+    <div class="row text-center mb-5">
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h3 class="h4">Technology</h3>
+                <p>The latest in coding, AI, and software engineering.</p>
             </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h3 class="h4">Fiction</h3>
+                <p>Bestsellers, thrillers, and classic literature.</p>
             </div>
-    </section>
-</main>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h3 class="h4">Business</h3>
+                <p>Finance, entrepreneurship, and leadership guides.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mb-5">
+        <h2 class="mb-4">Why Choose Us?</h2>
+        <p class="lead">Fast shipping, secure checkout, and a curated selection of great titles.</p>
+    </div>
+</div>
 
 <%- include('../partials/footer.ejs') %>

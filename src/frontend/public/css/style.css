@@ -1,0 +1,142 @@
+/* Global Styles */
+:root {
+    --primary-color: #008080; /* Deep Teal */
+    --secondary-color: #f0f0f0; /* Light Gray */
+    --text-color: #333;
+    --light-text: #fff;
+    --link-color: #007bff;
+    --accent-color: #ffc107; /* Yellow Accent */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+.page-header {
+    margin: 30px 0;
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: var(--primary-color) !important;
+}
+.navbar-custom .nav-link, 
+.navbar-custom .navbar-brand {
+    color: var(--light-text) !important;
+    font-weight: 500;
+}
+.navbar-custom .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+.cart-count {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8rem;
+    position: relative;
+    top: -5px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #006666; /* Darker Teal */
+    border-color: #006666;
+}
+
+/* Forms */
+.form-control, .form-group input, .form-group select {
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* Home and Book Catalog */
+.hero-section {
+    background: url('/images/hero-bg.jpg') center center/cover no-repeat; /* Placeholder Image */
+    color: var(--light-text);
+    padding: 100px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+.book-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+.book-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.book-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Admin Dashboard Specifics */
+.admin-dashboard {
+    padding-top: 30px;
+}
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.dashboard-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.status-pending { background-color: var(--accent-color); color: var(--text-color); padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+.status-processing { background-color: #0d6efd; color: var(--light-text); padding: 3px 8px; border-radius: 4px; }
+.status-shipped { background-color: #198754; color: var(--light-text); padding: 3px 8px; border-radius: 4px; }
+.status-delivered { background-color: var(--primary-color); color: var(--light-text); padding: 3px 8px; border-radius: 4px; }
+.status-cancelled { background-color: #dc3545; color: var(--light-text); padding: 3px 8px; border-radius: 4px; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+}

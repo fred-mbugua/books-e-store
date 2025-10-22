@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs', { pageTitle: pageTitle }) %>
+
+<main class="container">
+    <h1 class="page-header">Book Catalog</h1>
+    <p>Browse our collection of available books.</p>
+    
+    <div class="book-list">
+        <% if (books && books.length > 0) { %>
+            <% books.forEach(book => { %>
+                <div class="book-card">
+                    <img src="<%= book.image_url || '/images/default.jpg' %>" alt="<%= book.title %> Cover" class="book-image">
+                    <h3><a href="/books/<%= book.book_id %>"><%= book.title %></a></h3>
+                    <p class="author">By <%= book.author %></p>
+                    <p class="price">Ksh <%= book.price %></p>
+                    <p class="stock">Stock: <%= book.stock_quantity %></p>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No books are currently listed in the catalog.</p>
+        <% } %>
+    </div>
+</main>
+
+<%- include('../partials/footer.ejs') %>

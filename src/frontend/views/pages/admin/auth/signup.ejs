@@ -1,0 +1,48 @@
+<%- include('../../../partials/header.ejs', { pageTitle: 'Sign Up' }) %>
+
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card p-4 shadow-sm">
+                <h1 class="page-header text-center">Create a New Account</h1>
+                <p class="text-center text-muted mb-4">It's quick and easy.</p>
+
+                <% if (error) { %>
+                    <div class="alert alert-danger"><%= error %></div>
+                <% } %>
+
+                <form action="/auth/signup" method="POST">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" value="<%= locals.firstName || '' %>" required autofocus>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" value="<%= locals.lastName || '' %>" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" value="<%= locals.email || '' %>" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required minlength="8">
+                        <div class="form-text">Must be at least 8 characters long.</div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                    </div>
+                </form>
+
+                <hr class="my-4">
+                <p class="text-center">
+                    Already have an account? <a href="/auth/login">Log in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../../../partials/footer.ejs') %>

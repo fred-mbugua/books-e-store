@@ -1,0 +1,29 @@
+<%- include('../../../partials/header.ejs', { pageTitle: pageTitle }) %>
+
+<main class="container admin-dashboard">
+    <h1 class="page-header">Reports Dashboard</h1>
+    <p>Generate downloadable Excel reports for business intelligence.</p>
+    <a href="/admin/dashboard" class="btn btn-secondary">← Back to Dashboard</a>
+
+    <div class="dashboard-grid mt-4">
+        <div class="dashboard-card">
+            <h2>Sales Report</h2>
+            <p>Detailed revenue and order count by date.</p>
+            <a href="/admin/reports/generate?type=sales" class="btn btn-cta">Download Sales Report (.xlsx)</a>
+        </div>
+        
+        <div class="dashboard-card">
+            <h2>Detailed Order Report</h2>
+            <p>Full list of all orders, statuses, and customer data.</p>
+            <a href="/admin/reports/generate?type=orders" class="btn btn-cta">Download Order Report (.xlsx)</a>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>User Report</h2>
+            <p>List of all registered users and their assigned roles.</p>
+            <a href="/admin/reports/generate?type=users" class="btn btn-cta">Download User Report (.xlsx)</a>
+        </div>
+    </div>
+</main>
+
+<%- include('../../../partials/footer.ejs') %>

@@ -1,0 +1,795 @@
+2025-10-20 16:55:10 [INFO]: Server is running on http://localhost:3000
+2025-10-20 16:55:10 [INFO]: Database connection tested successfully.
+2025-10-21 08:14:09 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:14:09 [INFO]: Database connection tested successfully.
+2025-10-21 08:20:14 [INFO]: [REQ] POST /auth/register
+2025-10-21 08:20:15 [INFO]: [REQ] GET /
+2025-10-21 08:20:16 [INFO]: [REQ] GET /css/main.css
+2025-10-21 08:20:16 [INFO]: [REQ] GET /images/book-cover-placeholder.jpg
+2025-10-21 08:20:16 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-21 08:20:43 [INFO]: [REQ] GET /images/book-cover-placeholder.jpg
+2025-10-21 08:20:43 [INFO]: [REQ] GET /css/main.css
+2025-10-21 08:20:43 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-21 08:20:52 [INFO]: [REQ] POST /auth/login
+2025-10-21 08:20:53 [INFO]: [REQ] GET /
+2025-10-21 08:20:53 [INFO]: [REQ] GET /images/book-cover-placeholder.jpg
+2025-10-21 08:20:53 [INFO]: [REQ] GET /css/main.css
+2025-10-21 08:20:53 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-21 08:21:44 [INFO]: [REQ] GET /auth/login
+2025-10-21 08:21:44 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 08:26:26 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:26:26 [INFO]: Database connection tested successfully.
+2025-10-21 08:26:32 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:26:32 [INFO]: Database connection tested successfully.
+2025-10-21 08:26:37 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:29:54 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:29:54 [INFO]: Database connection tested successfully.
+2025-10-21 08:30:03 [INFO]: [REQ] POST /auth/login
+2025-10-21 08:31:13 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:31:13 [INFO]: Database connection tested successfully.
+2025-10-21 08:31:16 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:31:17 [INFO]: Database connection tested successfully.
+2025-10-21 08:31:33 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:31:33 [INFO]: Database connection tested successfully.
+2025-10-21 08:32:56 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:32:56 [INFO]: Database connection tested successfully.
+2025-10-21 08:33:03 [INFO]: [REQ] POST /auth/login
+2025-10-21 08:46:19 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:46:19 [INFO]: Database connection tested successfully.
+2025-10-21 08:46:39 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:46:39 [INFO]: Database connection tested successfully.
+2025-10-21 08:52:02 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:52:02 [INFO]: Database connection tested successfully.
+2025-10-21 08:53:21 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:53:21 [INFO]: Database connection tested successfully.
+2025-10-21 08:53:48 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:53:48 [INFO]: Database connection tested successfully.
+2025-10-21 08:58:45 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:58:45 [INFO]: Database connection tested successfully.
+2025-10-21 08:59:54 [INFO]: Server is running on http://localhost:3000
+2025-10-21 08:59:54 [INFO]: Database connection tested successfully.
+2025-10-21 09:03:30 [INFO]: [REQ] GET /books
+2025-10-21 09:03:30 [INFO]: [REQ] GET /css/main.css
+2025-10-21 09:03:30 [INFO]: [REQ] GET /js/main.js
+2025-10-21 10:29:22 [INFO]: Server is running on http://localhost:3000
+2025-10-21 10:29:22 [INFO]: Database connection tested successfully.
+2025-10-21 10:47:24 [INFO]: Server is running on http://localhost:3000
+2025-10-21 10:47:24 [INFO]: Database connection tested successfully.
+2025-10-21 10:47:37 [INFO]: [REQ] GET /books
+2025-10-21 10:47:38 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\books.ejs:14
+    12|                     <h3><a href="/books/<%= book.book_id %>"><%= book.title %></a></h3>
+    13|                     <p class="author">By <%= book.author %></p>
+ >> 14|                     <p class="price">Ksh <%= book.price.toFixed(2) %></p>
+    15|                     <p class="stock">Stock: <%= book.stock_quantity %></p>
+    16|                     <button class="btn btn-primary add-to-cart">Add to Cart</button>
+    17|                 </div>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:32:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:16:14)
+    at books (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBooks (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:13:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-21 11:06:37 [INFO]: Server is running on http://localhost:3000
+2025-10-21 11:06:37 [INFO]: Database connection tested successfully.
+2025-10-21 11:06:57 [INFO]: [REQ] GET /books
+2025-10-21 11:06:57 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\books.ejs:14
+    12|                     <h3><a href="/books/<%= book.book_id %>"><%= book.title %></a></h3>
+    13|                     <p class="author">By <%= book.author %></p>
+ >> 14|                     <p class="price">Ksh <%= book.price.toFixed(2) %></p>
+    15|                     <p class="stock">Stock: <%= book.stock_quantity %></p>
+    16|                     <button class="btn btn-primary add-to-cart">Add to Cart</button>
+    17|                 </div>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:32:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:16:14)
+    at books (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBooks (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:15:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-21 11:07:49 [INFO]: Server is running on http://localhost:3000
+2025-10-21 11:07:50 [INFO]: Database connection tested successfully.
+2025-10-21 11:07:55 [INFO]: [REQ] GET /books
+2025-10-21 11:07:55 [INFO]: [REQ] GET /css/main.css
+2025-10-21 11:07:55 [INFO]: [REQ] GET /js/main.js
+2025-10-21 11:46:31 [INFO]: [REQ] GET /books
+2025-10-21 11:46:32 [INFO]: [REQ] GET /css/main.css
+2025-10-21 11:46:32 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpeg
+2025-10-21 11:46:32 [INFO]: [REQ] GET /js/main.js
+2025-10-21 11:46:40 [INFO]: [REQ] GET /css/main.css
+2025-10-21 11:46:40 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 11:48:02 [INFO]: [REQ] GET /books
+2025-10-21 11:48:02 [INFO]: [REQ] GET /css/main.css
+2025-10-21 11:48:02 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-21 11:48:02 [INFO]: [REQ] GET /js/main.js
+2025-10-21 11:48:02 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 11:48:41 [INFO]: [REQ] GET /books
+2025-10-21 11:48:41 [INFO]: [REQ] GET /css/main.css
+2025-10-21 11:48:41 [INFO]: [REQ] GET /js/main.js
+2025-10-21 11:48:41 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-21 11:48:42 [INFO]: [REQ] GET /favicon.ico
+2025-10-21 13:33:09 [INFO]: [REQ] GET /books/add
+2025-10-21 13:33:11 [INFO]: [REQ] GET /books/add
+2025-10-21 13:47:07 [INFO]: Server is running on http://localhost:3000
+2025-10-21 13:47:07 [INFO]: Database connection tested successfully.
+2025-10-21 13:47:14 [INFO]: [REQ] GET /books/add
+2025-10-21 13:48:54 [INFO]: [REQ] GET /books/add
+2025-10-21 13:52:02 [INFO]: [REQ] GET /admin/books/add
+2025-10-21 13:52:02 [INFO]: [REQ] GET /login?error=unauthorized
+2025-10-21 13:54:25 [INFO]: [REQ] GET /login
+2025-10-21 13:54:26 [INFO]: [REQ] GET /login
+2025-10-21 14:08:32 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:08:32 [INFO]: Database connection tested successfully.
+2025-10-21 14:10:19 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:10:19 [INFO]: Database connection tested successfully.
+2025-10-21 14:10:33 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:10:33 [INFO]: Database connection tested successfully.
+2025-10-21 14:16:26 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:16:26 [INFO]: Database connection tested successfully.
+2025-10-21 14:17:34 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:17:34 [INFO]: Database connection tested successfully.
+2025-10-21 14:17:45 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:17:45 [INFO]: Database connection tested successfully.
+2025-10-21 14:18:24 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:18:24 [INFO]: Database connection tested successfully.
+2025-10-21 14:21:30 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:21:30 [INFO]: Database connection tested successfully.
+2025-10-21 14:21:35 [INFO]: Server is running on http://localhost:3000
+2025-10-21 14:21:35 [INFO]: Database connection tested successfully.
+2025-10-21 22:44:56 [INFO]: Server is running on http://localhost:3000
+2025-10-21 22:44:56 [INFO]: Database connection tested successfully.
+2025-10-21 22:45:08 [INFO]: [REQ] GET /admin/books/add
+2025-10-21 22:45:08 [INFO]: [REQ] GET /login?error=unauthorized
+2025-10-21 23:00:10 [INFO]: [REQ] GET /
+2025-10-21 23:00:10 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:00:11 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-21 23:00:30 [INFO]: [REQ] GET /books
+2025-10-21 23:00:31 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:00:31 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-21 23:00:43 [INFO]: [REQ] GET /cart
+2025-10-21 23:00:47 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:00:47 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:00:57 [INFO]: [REQ] GET /login
+2025-10-21 23:00:58 [INFO]: [REQ] GET /login
+2025-10-21 23:07:22 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:07:22 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:10:24 [INFO]: Server is running on http://localhost:3000
+2025-10-21 23:10:24 [INFO]: Database connection tested successfully.
+2025-10-21 23:11:05 [INFO]: Server is running on http://localhost:3000
+2025-10-21 23:11:05 [INFO]: Database connection tested successfully.
+2025-10-21 23:11:08 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:11:08 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:11:08 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:11:11 [INFO]: [REQ] GET /
+2025-10-21 23:11:12 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:11:12 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-21 23:11:15 [INFO]: [REQ] GET /books
+2025-10-21 23:11:15 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:11:15 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-21 23:11:24 [INFO]: [REQ] GET /books
+2025-10-21 23:11:24 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:11:24 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-21 23:11:30 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:11:30 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:11:35 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:11:35 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:11:36 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:11:36 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:13:22 [INFO]: Server is running on http://localhost:3000
+2025-10-21 23:13:22 [INFO]: Database connection tested successfully.
+2025-10-21 23:13:39 [INFO]: Server is running on http://localhost:3000
+2025-10-21 23:13:39 [INFO]: Database connection tested successfully.
+2025-10-21 23:14:04 [INFO]: [REQ] GET /
+2025-10-21 23:14:05 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:14:05 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:14:05 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-21 23:14:08 [INFO]: [REQ] GET /books
+2025-10-21 23:14:08 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:14:08 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:14:08 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-21 23:14:11 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:14:11 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\login.ejs:1
+ >> 1| <%- include('../../partials/header.ejs', { pageTitle: 'Login' }) %>
+    2| 
+    3| <main class="container py-5">
+    4|     <div class="row justify-content-center">
+
+Could not find the include file "../../partials/header.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:10:17)
+    at login (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-21 23:14:11 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:14:11 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:16:57 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:16:57 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\login.ejs:37
+    35| </main>
+    36| 
+ >> 37| <%- include('../../partials/footer.ejs') %>
+
+Could not find the include file "../../partials/footer.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:25:17)
+    at login (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-21 23:16:57 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:16:57 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:16:59 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:16:59 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\login.ejs:37
+    35| </main>
+    36| 
+ >> 37| <%- include('../../partials/footer.ejs') %>
+
+Could not find the include file "../../partials/footer.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:25:17)
+    at login (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-21 23:17:00 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:17:00 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:17:48 [INFO]: [REQ] GET /auth/login
+2025-10-21 23:17:48 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:17:48 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:17:59 [INFO]: [REQ] GET /auth/signup
+2025-10-21 23:17:59 [INFO]: [REQ] GET /css/style.css
+2025-10-21 23:17:59 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-21 23:36:09 [INFO]: Server is running on http://localhost:3000
+2025-10-21 23:36:09 [INFO]: Database connection tested successfully.
+2025-10-22 07:48:21 [INFO]: Server is running on http://localhost:3000
+2025-10-22 07:48:22 [INFO]: Database connection tested successfully.
+2025-10-22 07:54:14 [INFO]: [REQ] GET /favicon.ico
+2025-10-22 07:54:19 [INFO]: [REQ] GET /auth/signup
+2025-10-22 07:54:19 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\signup.ejs:1
+ >> 1| <%- include('../../partials/header.ejs', { pageTitle: 'Sign Up' }) %>
+    2| 
+    3| <main class="container py-5">
+    4|     <div class="row justify-content-center">
+
+Could not find the include file "../../partials/header.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:10:17)
+    at signup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getSignup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:132:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-22 07:54:19 [INFO]: [REQ] GET /css/style.css
+2025-10-22 07:54:26 [INFO]: [REQ] GET /
+2025-10-22 07:54:27 [INFO]: [REQ] GET /css/style.css
+2025-10-22 07:54:27 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-22 07:54:34 [INFO]: [REQ] GET /books
+2025-10-22 07:54:34 [INFO]: [REQ] GET /css/style.css
+2025-10-22 07:54:34 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 07:54:39 [INFO]: [REQ] GET /auth/login
+2025-10-22 07:54:40 [INFO]: [REQ] GET /css/style.css
+2025-10-22 07:54:47 [INFO]: [REQ] GET /auth/signup
+2025-10-22 07:54:47 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\signup.ejs:1
+ >> 1| <%- include('../../partials/header.ejs', { pageTitle: 'Sign Up' }) %>
+    2| 
+    3| <main class="container py-5">
+    4|     <div class="row justify-content-center">
+
+Could not find the include file "../../partials/header.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:10:17)
+    at signup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getSignup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:132:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-22 07:54:47 [INFO]: [REQ] GET /css/style.css
+2025-10-22 07:55:18 [INFO]: [REQ] GET /auth/signup
+2025-10-22 07:55:18 [INFO]: [REQ] GET /css/style.css
+2025-10-22 07:56:26 [INFO]: [REQ] POST /auth/signup
+2025-10-22 07:56:28 [INFO]: [REQ] GET /auth/login?status=registered
+2025-10-22 07:56:28 [INFO]: [REQ] GET /css/style.css
+2025-10-22 07:56:50 [INFO]: [REQ] POST /auth/login
+2025-10-22 12:51:14 [INFO]: Server is running on http://localhost:3000
+2025-10-22 12:51:14 [INFO]: Database connection tested successfully.
+2025-10-22 12:51:41 [INFO]: [REQ] GET /auth/login?status=registered
+2025-10-22 12:51:45 [INFO]: [REQ] GET /auth/login?status=registered
+2025-10-22 12:51:45 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:51:46 [INFO]: [REQ] POST /auth/login
+2025-10-22 12:51:47 [WARN]: Login failed for email: mbuguafredrick645@gmail.com
+2025-10-22 12:51:47 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:52:01 [INFO]: [REQ] POST /auth/login
+2025-10-22 12:52:02 [WARN]: Login failed for email: mbuguafredrick645@gmail.com
+2025-10-22 12:52:02 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:52:31 [INFO]: [REQ] POST /auth/login
+2025-10-22 12:52:32 [WARN]: Login failed for email: mbuguafredrick645@gmail.com
+2025-10-22 12:52:32 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:52:39 [INFO]: [REQ] POST /auth/login
+2025-10-22 12:52:40 [INFO]: [REQ] GET /
+2025-10-22 12:52:40 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:52:40 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-22 12:52:49 [INFO]: [REQ] GET /profile
+2025-10-22 12:52:49 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:52:53 [INFO]: [REQ] GET /cart
+2025-10-22 12:52:53 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:55:13 [INFO]: [REQ] GET /books
+2025-10-22 12:55:14 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:55:14 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 12:55:39 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:55:39 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:01 [INFO]: [REQ] GET /profile
+2025-10-22 12:56:01 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:01 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:56:06 [INFO]: [REQ] GET /auth/logout
+2025-10-22 12:56:06 [INFO]: User beeeee1d-50d1-4e5c-8b32-b664c57b6775 logged out.
+2025-10-22 12:56:06 [INFO]: [REQ] GET /
+2025-10-22 12:56:06 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:06 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:56:06 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-22 12:56:12 [INFO]: [REQ] GET /auth/login
+2025-10-22 12:56:12 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:12 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:56:15 [INFO]: [REQ] POST /auth/login
+2025-10-22 12:56:16 [WARN]: Login failed for email: mbuguafredrick645@gmail.com
+2025-10-22 12:56:16 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:16 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:56:25 [INFO]: [REQ] POST /auth/login
+2025-10-22 12:56:26 [INFO]: [REQ] GET /
+2025-10-22 12:56:26 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:26 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:56:26 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-22 12:56:36 [INFO]: [REQ] GET /admin/login
+2025-10-22 12:56:36 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:36 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:56:58 [INFO]: [REQ] GET /
+2025-10-22 12:56:58 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:56:58 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:56:58 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-22 12:57:03 [INFO]: [REQ] GET /books
+2025-10-22 12:57:04 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:57:04 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:57:04 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 12:57:10 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000001
+2025-10-22 12:57:11 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:57:25 [INFO]: [REQ] POST /cart/add
+2025-10-22 12:57:31 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 12:57:31 [INFO]: [REQ] GET /css/style.css
+2025-10-22 12:57:32 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 16:03:28 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:03:28 [INFO]: [REQ] GET /books
+2025-10-22 16:03:28 [INFO]: Database connection tested successfully.
+2025-10-22 16:03:28 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 16:03:28 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:04:49 [INFO]: [REQ] GET /profile
+2025-10-22 16:04:50 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:06:19 [INFO]: [REQ] GET /books
+2025-10-22 16:06:19 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:06:19 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 16:06:32 [INFO]: [REQ] GET /books
+2025-10-22 16:06:32 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:06:32 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 16:06:35 [INFO]: [REQ] GET /cart
+2025-10-22 16:06:36 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:06:38 [INFO]: [REQ] GET /admin/login
+2025-10-22 16:06:38 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:11:57 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:11:57 [INFO]: Database connection tested successfully.
+2025-10-22 16:13:39 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:13:39 [INFO]: Database connection tested successfully.
+2025-10-22 16:15:55 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:15:56 [INFO]: Database connection tested successfully.
+2025-10-22 16:18:54 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:18:55 [INFO]: Database connection tested successfully.
+2025-10-22 16:19:10 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:19:10 [INFO]: Database connection tested successfully.
+2025-10-22 16:19:19 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:19:19 [INFO]: Database connection tested successfully.
+2025-10-22 16:20:47 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:20:47 [INFO]: Database connection tested successfully.
+2025-10-22 16:22:41 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:22:42 [INFO]: Database connection tested successfully.
+2025-10-22 16:26:15 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:26:16 [INFO]: Database connection tested successfully.
+2025-10-22 16:26:49 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:26:49 [INFO]: Database connection tested successfully.
+2025-10-22 16:28:19 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:28:19 [INFO]: Database connection tested successfully.
+2025-10-22 16:31:03 [INFO]: [REQ] GET /admin/login
+2025-10-22 16:31:03 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:31:07 [INFO]: [REQ] GET /cart
+2025-10-22 16:31:07 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:32:09 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:32:09 [INFO]: Database connection tested successfully.
+2025-10-22 16:32:51 [INFO]: [REQ] GET /
+2025-10-22 16:32:52 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:32:52 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-22 16:35:27 [INFO]: Server is running on http://localhost:3000
+2025-10-22 16:35:27 [INFO]: Database connection tested successfully.
+2025-10-22 16:35:31 [INFO]: [REQ] GET /shop/cart
+2025-10-22 16:35:31 [INFO]: [REQ] GET /css/style.css
+2025-10-22 16:35:36 [INFO]: [REQ] GET /books
+2025-10-22 16:35:36 [ERROR]: error: relation "categories" does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findAllCategories (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\bookModel.ts:158:20)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:95:28)
+2025-10-22 18:53:25 [INFO]: [REQ] GET /cart
+2025-10-22 18:53:25 [INFO]: [REQ] GET /css/style.css
+2025-10-22 18:53:28 [INFO]: [REQ] GET /cart
+2025-10-22 18:53:28 [INFO]: [REQ] GET /css/style.css
+2025-10-22 18:53:32 [INFO]: [REQ] GET /shop/cart
+2025-10-22 18:53:32 [INFO]: [REQ] GET /css/style.css
+2025-10-22 18:53:34 [INFO]: [REQ] GET /books
+2025-10-22 18:53:34 [ERROR]: error: relation "categories" does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findAllCategories (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\bookModel.ts:158:20)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:95:28)
+2025-10-22 19:01:46 [INFO]: [REQ] GET /books
+2025-10-22 19:01:47 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\bookList.ejs:20
+    18|                     <h3 class="h6 text-truncate mb-1"><a href="/books/<%= book.book_id %>" class="text-decoration-none text-dark"><%= book.title %></a></h3>
+    19|                     <p class="text-muted small"><%= book.author %></p>
+ >> 20|                     <p class="fw-bold">Ksh <%= book.price.toFixed(2) %></p>
+    21|                     <a href="/books/<%= book.book_id %>" class="btn btn-sm btn-primary">View Details</a>
+    22|                 </div>
+    23|             <% }); %>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:41:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:22:14)
+    at bookList (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:116:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 19:01:47 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:01:54 [INFO]: [REQ] GET /profile
+2025-10-22 19:01:54 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:01:57 [INFO]: [REQ] GET /books
+2025-10-22 19:01:57 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\bookList.ejs:20
+    18|                     <h3 class="h6 text-truncate mb-1"><a href="/books/<%= book.book_id %>" class="text-decoration-none text-dark"><%= book.title %></a></h3>
+    19|                     <p class="text-muted small"><%= book.author %></p>
+ >> 20|                     <p class="fw-bold">Ksh <%= book.price.toFixed(2) %></p>
+    21|                     <a href="/books/<%= book.book_id %>" class="btn btn-sm btn-primary">View Details</a>
+    22|                 </div>
+    23|             <% }); %>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:41:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:22:14)
+    at bookList (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:116:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 19:01:57 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:02:02 [INFO]: [REQ] GET /books
+2025-10-22 19:02:02 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\bookList.ejs:20
+    18|                     <h3 class="h6 text-truncate mb-1"><a href="/books/<%= book.book_id %>" class="text-decoration-none text-dark"><%= book.title %></a></h3>
+    19|                     <p class="text-muted small"><%= book.author %></p>
+ >> 20|                     <p class="fw-bold">Ksh <%= book.price.toFixed(2) %></p>
+    21|                     <a href="/books/<%= book.book_id %>" class="btn btn-sm btn-primary">View Details</a>
+    22|                 </div>
+    23|             <% }); %>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:41:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:22:14)
+    at bookList (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:116:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 19:02:02 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:02:47 [INFO]: [REQ] GET /books
+2025-10-22 19:02:47 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:02:47 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:03:02 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:05:22 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:05:22 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:05:22 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:06:50 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:06:51 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:06:51 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:06:54 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:06:54 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:17:05 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:17:05 [INFO]: Database connection tested successfully.
+2025-10-22 19:17:14 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:17:14 [INFO]: Database connection tested successfully.
+2025-10-22 19:18:20 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:18:21 [INFO]: Database connection tested successfully.
+2025-10-22 19:18:29 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:18:30 [INFO]: Database connection tested successfully.
+2025-10-22 19:19:19 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:19:19 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:19 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:19:22 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:19:22 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:22 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:19:32 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002?bookId=b0000000-0000-4000-8000-000000000002&quantity=1
+2025-10-22 19:19:33 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:33 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:19:38 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:38 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:19:41 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002?bookId=b0000000-0000-4000-8000-000000000002&quantity=1
+2025-10-22 19:19:41 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:41 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:19:41 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:19:44 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002?bookId=b0000000-0000-4000-8000-000000000002&quantity=1
+2025-10-22 19:19:44 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:19:44 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:44 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:19:48 [INFO]: [REQ] GET /shop/cart
+2025-10-22 19:19:48 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:19:48 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:50 [INFO]: [REQ] GET /books
+2025-10-22 19:19:50 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:19:50 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:19:50 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:20:01 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000003
+2025-10-22 19:20:01 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:01 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:20:01 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:20:03 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000003?bookId=b0000000-0000-4000-8000-000000000003&quantity=1
+2025-10-22 19:20:03 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:03 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:20:03 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:20:11 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:11 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:20:11 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:15 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:15 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:20:15 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:18 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:20:18 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:18 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:20:18 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:20:22 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002?bookId=b0000000-0000-4000-8000-000000000002&quantity=1
+2025-10-22 19:20:22 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 19:20:22 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:20:22 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:24:51 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002?bookId=b0000000-0000-4000-8000-000000000002&quantity=1
+2025-10-22 19:24:51 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:24:51 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:24:55 [INFO]: [REQ] POST /shop/cart/add
+2025-10-22 19:25:01 [INFO]: [REQ] GET /shop/cart
+2025-10-22 19:25:01 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:25:01 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 19:25:28 [INFO]: [REQ] GET /shop/cart
+2025-10-22 19:25:28 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:25:28 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 19:25:34 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 19:25:34 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\checkout.ejs:61
+    59|                         <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+    60|                             <div><%= item.title %></div>
+ >> 61|                             <span class="text-muted"><%= item.quantity %> x Ksh <%= item.price.toFixed(2) %></span>
+    62|                         </li>
+    63|                     <% }); %>
+    64|                 </ul>
+
+item.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:53:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:45:19)
+    at checkout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getCheckout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:91:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+2025-10-22 19:25:34 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:26:34 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 19:26:34 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:45:27 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:45:27 [INFO]: Database connection tested successfully.
+2025-10-22 19:46:45 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 19:46:45 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:48:38 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:48:38 [INFO]: Database connection tested successfully.
+2025-10-22 19:50:09 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:50:09 [INFO]: Database connection tested successfully.
+2025-10-22 19:50:16 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 19:50:17 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:50:31 [INFO]: [REQ] GET /profile
+2025-10-22 19:50:31 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:50:42 [INFO]: [REQ] GET /books
+2025-10-22 19:50:43 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:50:43 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:50:52 [INFO]: [REQ] GET /books?q=node
+2025-10-22 19:50:52 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:50:52 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:50:57 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:50:57 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:50:57 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:51:04 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:51:04 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:51:04 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:51:07 [INFO]: [REQ] GET /shop/cart
+2025-10-22 19:51:07 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:51:07 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 19:51:15 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 19:51:15 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:51:15 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:51:17 [INFO]: [REQ] GET /shop/cart
+2025-10-22 19:51:17 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 19:51:17 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:51:19 [INFO]: [REQ] GET /books
+2025-10-22 19:51:19 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:51:19 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:51:21 [INFO]: [REQ] GET /books
+2025-10-22 19:51:21 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:51:21 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 19:51:22 [INFO]: [REQ] GET /shop/cart
+2025-10-22 19:51:22 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:51:23 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 19:51:56 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 19:51:56 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:52:05 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 19:52:05 [INFO]: [REQ] GET /css/style.css
+2025-10-22 19:53:24 [INFO]: Server is running on http://localhost:3000
+2025-10-22 19:53:25 [INFO]: Database connection tested successfully.

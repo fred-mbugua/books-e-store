@@ -1,0 +1,58 @@
+<%- include('../../../partials/header.ejs', { pageTitle: pageTitle }) %>
+
+<main class="container admin-content py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="page-header mb-0">Manage Book Catalog</h1>
+        <a href="/admin/books/add" class="btn btn-primary">Add New Book</a>
+    </div>
+
+    <% if (req.query.status === 'created') { %>
+        <div class="alert alert-success">Book added successfully!</div>
+    <% } else if (req.query.status === 'updated') { %>
+        <div class="alert alert-success">Book updated successfully!</div>
+    <% } else if (req.query.status === 'deleted') { %>
+        <div class="alert alert-warning">Book soft-deleted successfully!</div>
+    <% } %>
+
+    <div class="table-responsive card p-3">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% books.forEach(book => { %>
+                    <tr class="<%= book.is_active ? '' : 'table-secondary text-muted' %>">
+                        <td><%= book.title %></td>
+                        <td><%= book.author %></td>
+                        <td><%= book.isbn %></td>
+                        <td>Ksh <%= book.price.toFixed(2) %></td>
+                        <td><%= book.stock_quantity %></td>
+                        <td>
+                            <span class="badge bg-<%= book.is_active ? 'success' : 'danger' %>">
+                                <%= book.is_active ? 'Active' : 'Inactive' %>
+                            </span>
+                        </td>
+                        <td class="d-flex gap-2">
+                            <a href="/admin/books/edit/<%= book.book_id %>" class="btn btn-sm btn-info">Edit</a>
+                            
+                            <form action="/admin/books/delete" method="POST" onsubmit="return confirm('Are you sure you want to deactivate this book?');">
+                                <input type="hidden" name="bookId" value="<%= book.book_id %>">
+                                <button type="submit" class="btn btn-sm btn-warning">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<%- include('../../../partials/footer.ejs') %>

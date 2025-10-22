@@ -1,0 +1,338 @@
+2025-10-21 08:21:44 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 10:47:38 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\books.ejs:14
+    12|                     <h3><a href="/books/<%= book.book_id %>"><%= book.title %></a></h3>
+    13|                     <p class="author">By <%= book.author %></p>
+ >> 14|                     <p class="price">Ksh <%= book.price.toFixed(2) %></p>
+    15|                     <p class="stock">Stock: <%= book.stock_quantity %></p>
+    16|                     <button class="btn btn-primary add-to-cart">Add to Cart</button>
+    17|                 </div>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:32:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:16:14)
+    at books (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBooks (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:13:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-21 11:06:57 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\books.ejs:14
+    12|                     <h3><a href="/books/<%= book.book_id %>"><%= book.title %></a></h3>
+    13|                     <p class="author">By <%= book.author %></p>
+ >> 14|                     <p class="price">Ksh <%= book.price.toFixed(2) %></p>
+    15|                     <p class="stock">Stock: <%= book.stock_quantity %></p>
+    16|                     <button class="btn btn-primary add-to-cart">Add to Cart</button>
+    17|                 </div>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:32:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:16:14)
+    at books (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBooks (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:15:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-21 23:00:47 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:07:22 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:11:08 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:11:35 [ERROR]: Error: Failed to lookup view "pages/login" in views directory "E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views"
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+2025-10-21 23:14:11 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\login.ejs:1
+ >> 1| <%- include('../../partials/header.ejs', { pageTitle: 'Login' }) %>
+    2| 
+    3| <main class="container py-5">
+    4|     <div class="row justify-content-center">
+
+Could not find the include file "../../partials/header.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:10:17)
+    at login (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-21 23:16:57 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\login.ejs:37
+    35| </main>
+    36| 
+ >> 37| <%- include('../../partials/footer.ejs') %>
+
+Could not find the include file "../../partials/footer.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:25:17)
+    at login (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-21 23:16:59 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\login.ejs:37
+    35| </main>
+    36| 
+ >> 37| <%- include('../../partials/footer.ejs') %>
+
+Could not find the include file "../../partials/footer.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:25:17)
+    at login (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getLogin (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:10:7)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-22 07:54:19 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\signup.ejs:1
+ >> 1| <%- include('../../partials/header.ejs', { pageTitle: 'Sign Up' }) %>
+    2| 
+    3| <main class="container py-5">
+    4|     <div class="row justify-content-center">
+
+Could not find the include file "../../partials/header.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:10:17)
+    at signup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getSignup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:132:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-22 07:54:47 [ERROR]: Error: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\admin\auth\signup.ejs:1
+ >> 1| <%- include('../../partials/header.ejs', { pageTitle: 'Sign Up' }) %>
+    2| 
+    3| <main class="container py-5">
+    4|     <div class="row justify-content-center">
+
+Could not find the include file "../../partials/header.ejs"
+    at getIncludePath (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:185:13)
+    at includeFile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:311:19)
+    at include (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:701:16)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:10:17)
+    at signup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getSignup (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\authController.ts:132:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+2025-10-22 16:35:36 [ERROR]: error: relation "categories" does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findAllCategories (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\bookModel.ts:158:20)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:95:28)
+2025-10-22 18:53:34 [ERROR]: error: relation "categories" does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findAllCategories (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\bookModel.ts:158:20)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:95:28)
+2025-10-22 19:01:47 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\bookList.ejs:20
+    18|                     <h3 class="h6 text-truncate mb-1"><a href="/books/<%= book.book_id %>" class="text-decoration-none text-dark"><%= book.title %></a></h3>
+    19|                     <p class="text-muted small"><%= book.author %></p>
+ >> 20|                     <p class="fw-bold">Ksh <%= book.price.toFixed(2) %></p>
+    21|                     <a href="/books/<%= book.book_id %>" class="btn btn-sm btn-primary">View Details</a>
+    22|                 </div>
+    23|             <% }); %>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:41:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:22:14)
+    at bookList (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:116:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 19:01:57 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\bookList.ejs:20
+    18|                     <h3 class="h6 text-truncate mb-1"><a href="/books/<%= book.book_id %>" class="text-decoration-none text-dark"><%= book.title %></a></h3>
+    19|                     <p class="text-muted small"><%= book.author %></p>
+ >> 20|                     <p class="fw-bold">Ksh <%= book.price.toFixed(2) %></p>
+    21|                     <a href="/books/<%= book.book_id %>" class="btn btn-sm btn-primary">View Details</a>
+    22|                 </div>
+    23|             <% }); %>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:41:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:22:14)
+    at bookList (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:116:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 19:02:02 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\bookList.ejs:20
+    18|                     <h3 class="h6 text-truncate mb-1"><a href="/books/<%= book.book_id %>" class="text-decoration-none text-dark"><%= book.title %></a></h3>
+    19|                     <p class="text-muted small"><%= book.author %></p>
+ >> 20|                     <p class="fw-bold">Ksh <%= book.price.toFixed(2) %></p>
+    21|                     <a href="/books/<%= book.book_id %>" class="btn btn-sm btn-primary">View Details</a>
+    22|                 </div>
+    23|             <% }); %>
+
+book.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:41:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:22:14)
+    at bookList (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getBookCatalog (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\bookController.ts:116:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 19:25:34 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\checkout.ejs:61
+    59|                         <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+    60|                             <div><%= item.title %></div>
+ >> 61|                             <span class="text-muted"><%= item.quantity %> x Ksh <%= item.price.toFixed(2) %></span>
+    62|                         </li>
+    63|                     <% }); %>
+    64|                 </ul>
+
+item.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:53:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:45:19)
+    at checkout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getCheckout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:91:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15

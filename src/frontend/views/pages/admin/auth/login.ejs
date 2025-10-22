@@ -1,0 +1,37 @@
+<%- include('../../../partials/header.ejs', { pageTitle: 'Login' }) %>
+
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card p-4 shadow-sm">
+                <h1 class="page-header text-center">Login to Your Account</h1>
+                <p class="text-center text-muted mb-4">Access your profile and order history.</p>
+
+                <% if (error) { %>
+                    <div class="alert alert-danger"><%= error %></div>
+                <% } %>
+
+                <form action="/auth/login" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" value="<%= locals.email || '' %>" required autofocus>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Log In</button>
+                    </div>
+                </form>
+
+                <hr class="my-4">
+                <p class="text-center">
+                    Don't have an account? <a href="/auth/signup">Sign up here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../../../partials/footer.ejs') %>

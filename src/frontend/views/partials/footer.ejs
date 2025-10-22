@@ -1,8 +1,22 @@
-</div> </div> <footer class="main-footer">
-        <div class="container">
-            <p>&copy; <%= new Date().getFullYear() %> Book Store. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="/js/main.js"></script>
+<footer class="bg-dark text-white mt-5 p-4 text-center">
+    <div class="container">
+        <p class="mb-0">&copy; <%= new Date().getFullYear() %> The Book Store. All rights reserved.</p>
+        <p class="mb-0"><a href="/admin/login" class="text-secondary text-decoration-none">Admin Access</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // This is a placeholder for future AJAX functionality, showing how to update the UI dynamically.
+    document.addEventListener('DOMContentLoaded', () => {
+        // Simple logic to ensure cart count displays correctly
+        const cartCountElement = document.querySelector('.cart-count');
+        if (cartCountElement) {
+            // Retrieve current count from the cookie/global object if needed
+        }
+    });
+</script>
+
 </body>
 </html>
