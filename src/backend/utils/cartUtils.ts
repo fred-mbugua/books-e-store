@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 import * as cartTypes from '../types';
 
 // Cookie key for the shopping cart
-const CART_COOKIE_NAME = 'cart';
+const CART_COOKIE_NAME = 'bookstore_cart';
 
 /**
  * Retrieving the cart data from the signed cookie.

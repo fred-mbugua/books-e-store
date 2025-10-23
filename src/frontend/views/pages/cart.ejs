@@ -10,24 +10,48 @@
     <% } else { %>
         <div class="row">
             <div class="col-lg-8">
+                <div id="cart-alert-message" class="mb-3" style="display: none;"></div>
+
                 <% cart.items.forEach(item => { %>
-                    <div class="card mb-3 p-3">
+                    <div class="card mb-3 p-3 cart-item-card" data-book-id="<%= item.book_id %>" id="cart-item-<%= item.book_id %>">
                         <div class="row g-0 align-items-center">
-                            <div class="col-md-2">
-                                <img src="/images/default.jpg" class="img-fluid rounded" alt="<%= item.title %>">
+                            
+                            <div class="col-md-2 col-3">
+                                <img src="<%= item.image_url || '/images/default.jpg' %>" 
+                                     class="img-fluid rounded" 
+                                     alt="<%= item.title %>"
+                                     style="max-height: 100px; object-fit: cover;">
                             </div>
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <h5 class="card-title"><%= item.title %></h5>
-                                    <p class="card-text text-muted">Price: Ksh <%= item.price %></p>
-                                    <p class="card-text">Quantity: 
-                                        <input type="number" value="<%= item.quantity %>" min="1" class="form-control d-inline-block" style="width: 70px;">
-                                    </p>
+
+                            <div class="col-md-5 col-5">
+                                <div class="card-body py-0">
+                                    <h5 class="card-title mb-1 text-primary"><%= item.title %></h5>
+                                    <p class="card-text text-muted small">by <%= item.author %></p>
+                                    <p class="card-text mb-0">Price: Ksh <span class="item-price"><%= item.price %></span></p>
                                 </div>
                             </div>
-                            <div class="col-md-3 text-end">
-                                <h4 class="text-primary">Ksh <%= (item.quantity * item.price).toFixed(2) %></h4>
-                                <button class="btn btn-sm btn-outline-danger mt-2">Remove</button>
+                            
+                            <div class="col-md-3 col-4 d-flex flex-column align-items-center justify-content-center">
+                                <label for="quantity-<%= item.book_id %>" class="form-label mb-1 small">Qty:</label>
+                                <input 
+                                    type="number" 
+                                    value="<%= item.quantity %>" 
+                                    min="1" 
+                                    max="<%= item.stock_quantity %>"
+                                    class="form-control form-control-sm text-center cart-quantity-input" 
+                                    id="quantity-<%= item.book_id %>"
+                                    style="width: 70px;"
+                                    data-book-id="<%= item.book_id %>"
+                                >
+                            </div>
+
+                            <div class="col-md-2 col-12 text-center text-md-end mt-3 mt-md-0">
+                                <h4 class="text-primary item-subtotal">
+                                    Ksh <%= (item.quantity * item.price).toFixed(2) %>
+                                </h4>
+                                <button class="btn btn-sm btn-outline-danger remove-item-btn" data-book-id="<%= item.book_id %>">
+                                    Remove
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -35,21 +59,148 @@
             </div>
             
             <div class="col-lg-4">
-                <div class="card p-4 bg-light">
+                <div class="card p-4 bg-light sticky-top" style="top: 80px;" id="order-summary">
                     <h3 class="h4 mb-3">Order Summary</h3>
                     <div class="d-flex justify-content-between mb-2">
                         <span>Total Items:</span>
-                        <span class="fw-bold"><%= cart.totalQuantity %></span>
+                        <span class="fw-bold" id="summary-total-quantity"><%= cart.totalQuantity %></span>
                     </div>
-                    <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex justify-content-between mb-4 border-top pt-2">
                         <span class="h5">Subtotal:</span>
-                        <span class="h5 text-primary fw-bold">Ksh <%= cart.totalAmount.toFixed(2) %></span>
+                        <span class="h5 text-primary fw-bold" id="summary-total-amount">Ksh <%= cart.totalAmount %></span>
                     </div>
-                    <a href="/shop/checkout" class="btn btn-primary btn-lg w-100">Proceed to Checkout</a>
+                    <a href="/shop/checkout" class="btn btn-primary btn-lg w-100 <%= cart.totalQuantity === 0 ? 'disabled' : '' %>">
+                        Proceed to Checkout
+                    </a>
                 </div>
             </div>
         </div>
     <% } %>
 </main>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cartItemsContainer = document.querySelector('.row > .col-lg-8');
+        const alertDiv = document.getElementById('cart-alert-message');
+
+        // Helper to display messages
+        function displayMessage(type, message) {
+            alertDiv.className = `alert alert-${type}`;
+            alertDiv.textContent = message;
+            alertDiv.style.display = 'block';
+            setTimeout(() => alertDiv.style.display = 'none', 4000);
+        }
+
+        // Helper to update the summary and global counter
+        function updateSummaryAndCounter(newTotalQuantity, newTotalAmount) {
+            document.getElementById('summary-total-quantity').textContent = newTotalQuantity;
+            document.getElementById('summary-total-amount').textContent = `Ksh ${newTotalAmount.toFixed(2)}`;
+
+            const checkoutBtn = document.querySelector('.btn-lg.w-100');
+            if (checkoutBtn) {
+                checkoutBtn.classList.toggle('disabled', newTotalQuantity === 0);
+            }
+            
+            // Update global counter in header
+            const globalCartCounter = document.querySelector('.navbar-custom .cart-count');
+            if (globalCartCounter) {
+                globalCartCounter.textContent = newTotalQuantity;
+                globalCartCounter.style.display = newTotalQuantity > 0 ? 'inline' : 'none';
+            }
+        }
+        
+        // ---  QUANTITY UPDATE HANDLER ---
+        cartItemsContainer.querySelectorAll('.cart-quantity-input').forEach(input => {
+            input.addEventListener('change', async (e) => {
+                const bookId = e.target.dataset.bookId;
+                const newQuantity = parseInt(e.target.value, 10);
+                const maxQuantity = parseInt(e.target.max, 10);
+                const itemCard = document.getElementById(`cart-item-${bookId}`);
+                
+                if (newQuantity < 1) {
+                    e.target.value = 1; // Reset to min
+                    displayMessage('warning', 'Quantity cannot be less than 1.');
+                    return;
+                }
+                if (newQuantity > maxQuantity) {
+                    e.target.value = maxQuantity; // Reset to max
+                    displayMessage('warning', `Max stock available is ${maxQuantity}.`);
+                    return;
+                }
+                
+                try {
+                    const response = await fetch('/shop/cart/update', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ bookId, quantity: newQuantity }),
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        // Update item subtotal
+                        const price = parseFloat(itemCard.querySelector('.item-price').textContent);
+                        const newSubtotal = newQuantity * price;
+                        itemCard.querySelector('.item-subtotal').textContent = `Ksh ${newSubtotal.toFixed(2)}`;
+
+                        // Update summary totals
+                        updateSummaryAndCounter(data.totalQuantity, data.totalAmount);
+
+                        displayMessage('success', 'Cart updated successfully.');
+                    } else {
+                        // Revert quantity on error
+                        e.target.value = data.currentQuantity || 1; 
+                        displayMessage('danger', data.message || 'Failed to update cart.');
+                    }
+                } catch (error) {
+                    displayMessage('danger', 'Network error. Could not update cart.');
+                }
+            });
+        });
+
+        // ---  REMOVE ITEM HANDLER ---
+        cartItemsContainer.querySelectorAll('.remove-item-btn').forEach(button => {
+            button.addEventListener('click', async (e) => {
+                const bookId = e.target.dataset.bookId;
+                const itemCard = document.getElementById(`cart-item-${bookId}`);
+
+                if (!confirm('Are you sure you want to remove this item?')) return;
+                
+                e.target.disabled = true;
+
+                try {
+                    const response = await fetch('/shop/cart/remove', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ bookId }),
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        // Remove the item card from the DOM
+                        itemCard.remove();
+                        
+                        // Update summary totals
+                        updateSummaryAndCounter(data.totalQuantity, data.totalAmount);
+
+                        if (data.totalQuantity === 0) {
+                            // If cart is empty, reload the page to show the empty state
+                            window.location.reload(); 
+                        } else {
+                            displayMessage('success', 'Item removed from cart.');
+                        }
+                    } else {
+                        displayMessage('danger', data.message || 'Failed to remove item.');
+                    }
+                } catch (error) {
+                    displayMessage('danger', 'Network error. Could not remove item.');
+                    e.target.disabled = false;
+                }
+            });
+        });
+    });
+</script>
 
 <%- include('../partials/footer.ejs') %>

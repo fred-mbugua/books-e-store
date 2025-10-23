@@ -64,7 +64,7 @@ export const createOrder = async (orderData: OrderData): Promise<string> => {
         // Inserting order items
         const itemValues = orderData.items.map(item => [
             orderId,
-            item.bookId,
+            item.book_id,
             item.quantity,
             item.price,
         ]);
@@ -176,12 +176,12 @@ export const findOrdersByUserId = async (userId: string): Promise<any[]> => {
         SELECT 
             o.order_id, 
             o.total_amount, 
-            o.created_at, 
+            o.order_date, 
             os.status_name
         FROM orders o
         JOIN order_statuses os ON o.status_id = os.status_id
         WHERE o.user_id = $1
-        ORDER BY o.created_at DESC;
+        ORDER BY o.order_date DESC;
     `;
     const result = await query(sql, [userId]);
     return result.rows;
@@ -214,6 +214,35 @@ export const findOrderDetailByOrderIdAndUserId = async (orderId: string, userId:
     const itemsResult = await query(itemsSql, [orderId]);
 
     // Combining order and items data
+    return {
+        ...order,
+        items: itemsResult.rows,
+    };
+};
+
+/**
+ * Retrieving a single order by ID without checking the user_id (for authorized guest/admin use).
+ */
+export const findOrderDetailById = async (orderId: string) => {
+    const orderSql = `
+        SELECT o.*, os.status_name
+        FROM orders o
+        JOIN order_statuses os ON o.status_id = os.status_id
+        WHERE o.order_id = $1;
+    `;
+    const orderResult = await query(orderSql, [orderId]);
+    const order = orderResult.rows[0];
+
+    if (!order) return null;
+
+    const itemsSql = `
+        SELECT oi.*, b.title, b.author
+        FROM order_items oi
+        JOIN books b ON oi.book_id = b.book_id
+        WHERE oi.order_id = $1;
+    `;
+    const itemsResult = await query(itemsSql, [orderId]);
+
     return {
         ...order,
         items: itemsResult.rows,

@@ -2,6 +2,7 @@ import { orderModel, bookModel, actionLogModel } from '../models';
 import { CartItem, ShoppingCart } from '../types/cart';
 import * as notificationService from './notificationService';
 import { logger } from '../utils';
+import express, { Request, Response, NextFunction } from 'express';
 
 /**
  * Processing the checkout, creating the order, and sending notifications.
@@ -24,7 +25,7 @@ export const processCheckout = async (
     // Ensuring stock is available (Simplified check)
     // NOTE: To make the system robust I will add the ability to check stock and adjust within the database transaction.
     for (const item of cart.items) {
-        const book = await bookModel.findBookById(item.bookId);
+        const book = await bookModel.findBookById(item.book_id);
         if (!book || book.stock_quantity < item.quantity) {
             throw new Error(`Insufficient stock for book: ${item.title}`);
         }
@@ -150,4 +151,33 @@ export const getOrdersByUserId = async (userId: string): Promise<any[]> => {
 export const getOrderDetailByUserId = async (orderId: string, userId: string): Promise<any> => {
     // Calling the new model function with user restriction
     return orderModel.findOrderDetailByOrderIdAndUserId(orderId, userId);
+};
+
+/**
+ * Retrieves order details for the confirmation page, checking for user or guest ownership.
+ */
+export const getOrderDetailsForConfirmation = async (req: Request, orderId: string): Promise<any | null> => {
+    // Check if the user is logged in
+    if (req.user) {
+        return orderModel.findOrderDetailByOrderIdAndUserId(orderId, req.user.userId);
+    }
+
+    // Handle Guest Order Confirmation
+    // NOTE: For security, a guest can only view an order if the orderId 
+    // matches a temporary ID stored in their session/cookie immediately after placing the order.
+    
+    // This is a placeholder for session/cookie verification logic:
+    
+    /* const isGuestAuthorized = req.session.lastConfirmedOrderId === orderId; 
+    
+    if (isGuestAuthorized) {
+        return orderModel.findOrderDetailById(orderId); // A model function without user_id check
+    }
+    */
+    
+    // For now, if not logged in, we must assume the order belongs to a logged-in user 
+    // unless a guest verification mechanism is fully implemented. 
+    // Returning null is the safest default for unauthorized access.
+    logger.warn(`Unauthorized attempt to view order confirmation for ${orderId}.`);
+    return null;
 };

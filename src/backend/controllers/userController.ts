@@ -8,9 +8,10 @@ import { logger } from '../utils';
  */
 export const getProfileDashboard = (req: Request, res: Response) => {
     // req.user is populated by the authentication middleware
+    console.log('Profile Dashboard - User:', res.locals.user);
     res.render('pages/profile/dashboard', {
         pageTitle: 'My Account',
-        user: req.user,
+        user: res.locals.user,
     });
 };
 
@@ -24,6 +25,8 @@ export const getOrderHistory = async (req: Request, res: Response) => {
     try {
         
         const orders = await orderService.getOrdersByUserId(req.user.userId);
+
+        console.log('User Order History:', orders);
 
         res.render('pages/profile/orders', {
             pageTitle: 'My Orders',

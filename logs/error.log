@@ -336,3 +336,238 @@ item.price.toFixed is not a function
     at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
     at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
     at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+2025-10-22 23:21:29 [ERROR]: error: column o.created_at does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findOrdersByUserId (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\orderModel.ts:186:20)
+    at getOrderHistory (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\userController.ts:26:24)
+2025-10-22 23:28:38 [ERROR]: error: column o.created_at does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findOrdersByUserId (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\orderModel.ts:186:20)
+    at getOrderHistory (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\userController.ts:27:24)
+2025-10-22 23:30:25 [ERROR]: error: column o.created_at does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findOrdersByUserId (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\orderModel.ts:186:20)
+    at getOrderHistory (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\userController.ts:27:24)
+2025-10-23 15:41:34 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\cart.ejs:30
+    28|                                     <h5 class="card-title mb-1 text-primary"><%= item.title %></h5>
+    29|                                     <p class="card-text text-muted small">by <%= item.author %></p>
+ >> 30|                                     <p class="card-text mb-0">Price: Ksh <span class="item-price"><%= item.price.toFixed(2) %></span></p>
+    31|                                 </div>
+    32|                             </div>
+    33|                             
+
+item.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:39:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:19:19)
+    at cart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:13:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+2025-10-23 15:42:13 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:26 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:36 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:47 [ERROR]: Error: Item not found to remove.
+    at Object.removeCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:148:15)
+    at postRemoveFromCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:208:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:56 [ERROR]: Error: Item not found to remove.
+    at Object.removeCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:148:15)
+    at postRemoveFromCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:208:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:43:53 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:44:08 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:48:30 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:121:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:50:37 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:122:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:59:16 [ERROR]: TypeError: item.price_at_purchase.toFixed is not a function
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:8:77
+    at Array.map (<anonymous>)
+    at formatOrderItems (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:7:18)
+    at Object.sendOrderConfirmationEmail (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:23:15)
+    at Object.processCheckout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\orderService.ts:54:35)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at postPlaceOrder (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:140:25)
+2025-10-23 16:01:07 [ERROR]: TypeError: item.price_at_purchase.toFixed is not a function
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:8:77
+    at Array.map (<anonymous>)
+    at formatOrderItems (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:7:18)
+    at Object.sendOrderConfirmationEmail (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:23:15)
+    at Object.processCheckout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\orderService.ts:54:35)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at postPlaceOrder (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:140:25)
+2025-10-23 16:02:16 [ERROR]: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-429898cc930sm4669619f8f.33 - gsmtp
+    at SMTPConnection._formatError (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:1588:34)
+    at SMTPConnection.<anonymous> (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at TLSSocket.SMTPConnection._onSocketData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at TLSSocket.Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)
+2025-10-23 20:11:06 [ERROR]: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-475cae9f292sm44959575e9.5 - gsmtp
+    at SMTPConnection._formatError (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:1588:34)
+    at SMTPConnection.<anonymous> (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at TLSSocket.SMTPConnection._onSocketData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at TLSSocket.Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)

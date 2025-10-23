@@ -4,7 +4,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import { query } from './models';
 import { logger } from './utils';
-import { authRoutes, bookRoutes, adminRoutes, checkoutRoutes } from './routes';
+import { authRoutes, bookRoutes, adminRoutes, checkoutRoutes, profileRoutes } from './routes';
 import { authService } from './services';
 import { authenticate } from './middlewares/authMiddleware';
 import { userModel } from './models';
@@ -82,6 +82,7 @@ app.use('/auth', authRoutes); // Authentication routes
 app.use('/books', bookRoutes); // Public book catalog routes
 app.use('/admin', adminRoutes); // Protected admin dashboard routestication actions
 app.use('/shop', checkoutRoutes); // Checkout and order routes
+app.use('/profile', profileRoutes); // User profile routes
 
 // --- Error Handling Middleware (Keep last) ---
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {

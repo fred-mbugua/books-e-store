@@ -5,7 +5,7 @@ import { logger } from '../utils';
 // Helper function to format order items for HTML/Text
 const formatOrderItems = (items: any[]): string => {
     return items.map(item => 
-        `<li>${item.title} (${item.quantity} x Ksh ${item.price_at_purchase.toFixed(2)})</li>`
+        `<li>${item.title} (${item.quantity} x Ksh ${item.price_at_purchase})</li>`
     ).join('');
 };
 
@@ -22,7 +22,7 @@ export const sendOrderConfirmationEmail = async (order: any) => {
         <ul>
             ${formatOrderItems(order.items)}
         </ul>
-        <p>Total Amount: <strong>Ksh ${order.total_amount.toFixed(2)}</strong></p>
+        <p>Total Amount: <strong>Ksh ${order.total_amount}</strong></p>
         <p>We will notify you when your order status changes.</p>
         <p>Shipping Address: ${order.shipping_address}</p>
     `;
@@ -38,7 +38,7 @@ export const sendAdminOrderAlert = async (order: any) => {
     const message = `
     🚨 NEW ORDER PLACED!
     ID: ${order.order_id.substring(0, 8)}
-    Total: Ksh ${order.total_amount.toFixed(2)}
+    Total: Ksh ${order.total_amount}
     Customer: ${order.guest_name} (${order.guest_phone})
     Status: ${order.status_name}
     `;

@@ -793,3 +793,512 @@ item.price.toFixed is not a function
 2025-10-22 19:52:05 [INFO]: [REQ] GET /css/style.css
 2025-10-22 19:53:24 [INFO]: Server is running on http://localhost:3000
 2025-10-22 19:53:25 [INFO]: Database connection tested successfully.
+2025-10-22 23:14:30 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 23:14:32 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:14:45 [INFO]: [REQ] GET /profile
+2025-10-22 23:14:45 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:15:33 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 23:15:33 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:15:42 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:15:42 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 23:16:04 [INFO]: [REQ] GET /books
+2025-10-22 23:16:04 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:16:04 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 23:16:08 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:16:08 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:16:08 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 23:20:39 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:20:40 [INFO]: Database connection tested successfully.
+2025-10-22 23:20:49 [INFO]: [REQ] GET /profile
+2025-10-22 23:20:49 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:21:10 [INFO]: [REQ] GET /books
+2025-10-22 23:21:10 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:21:10 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 23:21:13 [INFO]: [REQ] GET /books
+2025-10-22 23:21:13 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:21:13 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 23:21:15 [INFO]: [REQ] GET /profile
+2025-10-22 23:21:15 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:21:25 [INFO]: [REQ] GET /profile/edit
+2025-10-22 23:21:29 [INFO]: [REQ] GET /profile/orders
+2025-10-22 23:21:29 [ERROR]: error: column o.created_at does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findOrdersByUserId (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\orderModel.ts:186:20)
+    at getOrderHistory (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\userController.ts:26:24)
+2025-10-22 23:21:29 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:21:36 [INFO]: [REQ] GET /profile/security
+2025-10-22 23:21:36 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:22:32 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:22:32 [INFO]: Database connection tested successfully.
+2025-10-22 23:22:41 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:22:41 [INFO]: Database connection tested successfully.
+2025-10-22 23:22:46 [INFO]: [REQ] GET /profile
+2025-10-22 23:22:47 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:26:41 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:26:41 [INFO]: Database connection tested successfully.
+2025-10-22 23:26:47 [INFO]: [REQ] GET /profile
+2025-10-22 23:26:47 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:27:45 [INFO]: [REQ] GET /profile
+2025-10-22 23:27:45 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:27:56 [INFO]: [REQ] GET /profile
+2025-10-22 23:27:56 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:27:58 [INFO]: [REQ] GET /profile
+2025-10-22 23:27:58 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:27:59 [INFO]: [REQ] GET /profile
+2025-10-22 23:27:59 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:27:59 [INFO]: [REQ] GET /profile
+2025-10-22 23:27:59 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:28:00 [INFO]: [REQ] GET /profile
+2025-10-22 23:28:00 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:28:38 [INFO]: [REQ] GET /profile/orders
+2025-10-22 23:28:38 [ERROR]: error: column o.created_at does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findOrdersByUserId (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\orderModel.ts:186:20)
+    at getOrderHistory (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\userController.ts:27:24)
+2025-10-22 23:28:38 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:30:12 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:30:12 [INFO]: Database connection tested successfully.
+2025-10-22 23:30:17 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:30:17 [INFO]: Database connection tested successfully.
+2025-10-22 23:30:25 [INFO]: [REQ] GET /profile/orders
+2025-10-22 23:30:25 [ERROR]: error: column o.created_at does not exist
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.findOrdersByUserId (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\models\orderModel.ts:186:20)
+    at getOrderHistory (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\userController.ts:27:24)
+2025-10-22 23:30:25 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:04 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:35:04 [INFO]: Database connection tested successfully.
+2025-10-22 23:35:12 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:35:12 [INFO]: Database connection tested successfully.
+2025-10-22 23:35:24 [INFO]: [REQ] GET /profile/orders
+2025-10-22 23:35:24 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:29 [INFO]: [REQ] GET /profile
+2025-10-22 23:35:29 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:30 [INFO]: [REQ] GET /profile/orders
+2025-10-22 23:35:30 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:32 [INFO]: [REQ] GET /books
+2025-10-22 23:35:32 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:32 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 23:35:35 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-22 23:35:35 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:35 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 23:35:37 [INFO]: [REQ] POST /shop/cart/add
+2025-10-22 23:35:43 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:35:43 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:43 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 23:35:53 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000001
+2025-10-22 23:35:53 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:53 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-22 23:35:54 [INFO]: [REQ] POST /shop/cart/add
+2025-10-22 23:35:55 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:35:56 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:35:56 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 23:36:48 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:36:48 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:36:48 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 23:36:49 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:36:49 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:36:49 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 23:38:06 [INFO]: Server is running on http://localhost:3000
+2025-10-22 23:38:06 [INFO]: Database connection tested successfully.
+2025-10-22 23:38:17 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:38:17 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 23:38:17 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:38:18 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:38:18 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:38:18 [INFO]: [REQ] GET /images/default.jpg
+2025-10-22 23:38:24 [INFO]: [REQ] GET /shop/checkout
+2025-10-22 23:38:24 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:38:33 [INFO]: [REQ] GET /css/style.css
+2025-10-22 23:38:33 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-22 23:42:33 [INFO]: [REQ] GET /shop/cart
+2025-10-22 23:42:33 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:40:26 [INFO]: Server is running on http://localhost:3000
+2025-10-23 15:40:26 [INFO]: Database connection tested successfully.
+2025-10-23 15:41:33 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:41:34 [ERROR]: TypeError: E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\frontend\views\pages\cart.ejs:30
+    28|                                     <h5 class="card-title mb-1 text-primary"><%= item.title %></h5>
+    29|                                     <p class="card-text text-muted small">by <%= item.author %></p>
+ >> 30|                                     <p class="card-text mb-0">Price: Ksh <span class="item-price"><%= item.price.toFixed(2) %></span></p>
+    31|                                 </div>
+    32|                             </div>
+    33|                             
+
+item.price.toFixed is not a function
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:39:37)
+    at Array.forEach (<anonymous>)
+    at eval (eval at compile (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:673:12), <anonymous>:19:19)
+    at cart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:274:36)
+    at View.exports.renderFile [as engine] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\view.js:135:8)
+    at tryRender (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:657:10)
+    at Function.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\response.js:1049:7)
+    at getCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:13:9)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+2025-10-23 15:41:34 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:42:05 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:42:06 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:42:06 [INFO]: [REQ] GET /images/default.jpg
+2025-10-23 15:42:12 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:42:13 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:22 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:42:22 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:42:22 [INFO]: [REQ] GET /images/default.jpg
+2025-10-23 15:42:26 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:42:26 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:32 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:42:32 [INFO]: [REQ] GET /images/default.jpg
+2025-10-23 15:42:32 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:42:36 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:42:36 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:40 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:42:40 [INFO]: [REQ] GET /images/default.jpg
+2025-10-23 15:42:40 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:42:47 [INFO]: [REQ] POST /shop/cart/remove
+2025-10-23 15:42:47 [ERROR]: Error: Item not found to remove.
+    at Object.removeCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:148:15)
+    at postRemoveFromCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:208:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:56 [INFO]: [REQ] POST /shop/cart/remove
+2025-10-23 15:42:56 [ERROR]: Error: Item not found to remove.
+    at Object.removeCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:148:15)
+    at postRemoveFromCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:208:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:42:58 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:42:58 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:42:58 [INFO]: [REQ] GET /images/default.jpg
+2025-10-23 15:43:04 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:43:04 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:43:38 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:43:38 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:43:40 [INFO]: [REQ] GET /books
+2025-10-23 15:43:40 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:43:41 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:43:43 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000001
+2025-10-23 15:43:43 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:43:43 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:43:45 [INFO]: [REQ] POST /shop/cart/add
+2025-10-23 15:43:49 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:43:50 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:43:50 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:43:53 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:43:53 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:44:08 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:44:08 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:120:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:45:15 [INFO]: Server is running on http://localhost:3000
+2025-10-23 15:45:15 [INFO]: Database connection tested successfully.
+2025-10-23 15:48:23 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:48:23 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:48:23 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:48:30 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:48:30 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:121:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:50:08 [INFO]: Server is running on http://localhost:3000
+2025-10-23 15:50:08 [INFO]: Database connection tested successfully.
+2025-10-23 15:50:32 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:50:33 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:50:33 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:50:37 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:50:37 [ERROR]: Error: Item not found in cart.
+    at Object.updateCartItem (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\cartService.ts:122:15)
+    at postUpdateCart (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:179:40)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:328:13)
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\express\lib\router\index.js:280:10)
+2025-10-23 15:51:14 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:51:14 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:54:58 [INFO]: Server is running on http://localhost:3000
+2025-10-23 15:54:59 [INFO]: Database connection tested successfully.
+2025-10-23 15:55:16 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:55:17 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:17 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:18 [INFO]: [REQ] GET /books
+2025-10-23 15:55:18 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:18 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:55:19 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:21 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000001
+2025-10-23 15:55:21 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:21 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:55:21 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:24 [INFO]: [REQ] POST /shop/cart/add
+2025-10-23 15:55:30 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:55:30 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:30 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:55:30 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:33 [INFO]: [REQ] POST /shop/cart/remove
+2025-10-23 15:55:33 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:55:33 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:33 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:35 [INFO]: [REQ] GET /books
+2025-10-23 15:55:36 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:36 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:55:36 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:39 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000001
+2025-10-23 15:55:39 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:39 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:55:39 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:41 [INFO]: [REQ] POST /shop/cart/add
+2025-10-23 15:55:45 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:55:45 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:45 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:55:45 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:47 [INFO]: [REQ] POST /shop/cart/update
+2025-10-23 15:55:52 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:55:53 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:55:53 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:55:53 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:56 [INFO]: [REQ] GET /checkout
+2025-10-23 15:55:56 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:55:56 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:57:10 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:57:11 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:57:11 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:57:12 [INFO]: [REQ] GET /shop/cart
+2025-10-23 15:57:12 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:57:12 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 15:57:12 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:57:14 [INFO]: [REQ] GET /shop/checkout
+2025-10-23 15:57:15 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 15:57:15 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:59:15 [INFO]: [REQ] POST /shop/place-order
+2025-10-23 15:59:16 [ERROR]: TypeError: item.price_at_purchase.toFixed is not a function
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:8:77
+    at Array.map (<anonymous>)
+    at formatOrderItems (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:7:18)
+    at Object.sendOrderConfirmationEmail (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:23:15)
+    at Object.processCheckout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\orderService.ts:54:35)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at postPlaceOrder (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:140:25)
+2025-10-23 15:59:16 [INFO]: [REQ] GET /css/style.css
+2025-10-23 15:59:16 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 16:00:50 [INFO]: Server is running on http://localhost:3000
+2025-10-23 16:00:50 [INFO]: Database connection tested successfully.
+2025-10-23 16:01:00 [INFO]: Server is running on http://localhost:3000
+2025-10-23 16:01:00 [INFO]: Database connection tested successfully.
+2025-10-23 16:01:07 [INFO]: [REQ] POST /shop/place-order
+2025-10-23 16:01:07 [ERROR]: TypeError: item.price_at_purchase.toFixed is not a function
+    at E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:8:77
+    at Array.map (<anonymous>)
+    at formatOrderItems (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:7:18)
+    at Object.sendOrderConfirmationEmail (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\notificationService.ts:23:15)
+    at Object.processCheckout (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\services\orderService.ts:54:35)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at postPlaceOrder (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\src\backend\controllers\checkoutController.ts:140:25)
+2025-10-23 16:01:07 [INFO]: [REQ] GET /css/style.css
+2025-10-23 16:01:07 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 16:02:03 [INFO]: Server is running on http://localhost:3000
+2025-10-23 16:02:03 [INFO]: Database connection tested successfully.
+2025-10-23 16:02:14 [INFO]: [REQ] POST /shop/place-order
+2025-10-23 16:02:16 [ERROR]: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-429898cc930sm4669619f8f.33 - gsmtp
+    at SMTPConnection._formatError (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:1588:34)
+    at SMTPConnection.<anonymous> (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at TLSSocket.SMTPConnection._onSocketData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at TLSSocket.Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)
+2025-10-23 16:02:16 [INFO]: [WhatsApp/SMS Placeholder] Sending to +254700000000: 
+    🚨 NEW ORDER PLACED!
+    ID: f11c7b60
+    Tot...
+2025-10-23 16:02:16 [INFO]: [REQ] GET /order/confirmation?id=f11c7b60
+2025-10-23 16:02:16 [INFO]: [REQ] GET /css/style.css
+2025-10-23 16:02:16 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:20 [INFO]: Server is running on http://localhost:3000
+2025-10-23 20:10:20 [INFO]: Database connection tested successfully.
+2025-10-23 20:10:36 [INFO]: [REQ] GET /order/confirmation?id=f11c7b60
+2025-10-23 20:10:37 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:37 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:10:40 [INFO]: [REQ] GET /
+2025-10-23 20:10:40 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:10:40 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:41 [INFO]: [REQ] GET /images/hero-bg.jpg
+2025-10-23 20:10:43 [INFO]: [REQ] GET /shop/cart
+2025-10-23 20:10:44 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:44 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:10:46 [INFO]: [REQ] GET /books
+2025-10-23 20:10:46 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:10:46 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 20:10:46 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:49 [INFO]: [REQ] GET /books/b0000000-0000-4000-8000-000000000002
+2025-10-23 20:10:49 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:49 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:10:49 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 20:10:51 [INFO]: [REQ] POST /shop/cart/add
+2025-10-23 20:10:55 [INFO]: [REQ] GET /shop/cart
+2025-10-23 20:10:55 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:55 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:10:55 [INFO]: [REQ] GET /images/BOOKS/spark-cre-grade-8-cover-1753255540.jpg
+2025-10-23 20:10:58 [INFO]: [REQ] GET /shop/checkout
+2025-10-23 20:10:58 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:10:58 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:11:04 [INFO]: [REQ] POST /shop/place-order
+2025-10-23 20:11:06 [ERROR]: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-475cae9f292sm44959575e9.5 - gsmtp
+    at SMTPConnection._formatError (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:1588:34)
+    at SMTPConnection.<anonymous> (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at TLSSocket.SMTPConnection._onSocketData (E:\Pers\Fred\Pers\Free Style Code Technologies\Books E-Commerce\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at TLSSocket.Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)
+2025-10-23 20:11:06 [INFO]: [WhatsApp/SMS Placeholder] Sending to +254700000000: 
+    🚨 NEW ORDER PLACED!
+    ID: bdf5329a
+    Tot...
+2025-10-23 20:11:06 [INFO]: [REQ] GET /shop/shop/order-confirmation/?id=bdf5329a
+2025-10-23 20:11:06 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:11:06 [INFO]: [REQ] GET /css/style.css
+2025-10-23 20:11:23 [INFO]: [REQ] GET /shop/order-confirmation/?id=bdf5329a
+2025-10-23 20:11:24 [INFO]: [REQ] GET /.well-known/appspecific/com.chrome.devtools.json
+2025-10-23 20:11:24 [INFO]: [REQ] GET /css/style.css
